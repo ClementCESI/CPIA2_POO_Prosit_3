@@ -2,6 +2,14 @@
 #include "Point2D.h"
 #include <string>;
  
+Point2D::Point2D() {
+	this->x = 0;
+	this->y = 0;
+	this->nPoints = 2;
+	this->id += 2;
+}
+
+
 Point2D::Point2D(double x, double y) {
 	this->x = x;
 	this->y = y;

@@ -1,10 +1,11 @@
+#pragma once
 #include "Point3D.h"
 
 Point3D::Point3D(double x, double y, double z) {
 	Point2D::Point2D(x, y);
 	this->z = z;
 	this->id += 2;
-	this->nPoints += 1;
+	this->nPoints = 3;
 }
 
 double Point3D::getZ() {
